@@ -1,0 +1,50 @@
+:root {
+    /* Colors */
+    --bs-link-color: #00BFFF;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.site-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-intro .logo {
+    width: 50%;
+    height: 50%;
+}
+
+/* Decreases the size of the movie poster in the Graphic Design Work accordion item. */
+.movie-poster {
+    width: 80%;
+    height: 80%;
+}
+
+.portfolio-item {
+    transition: 250ms;
+    transform: scale(1);
+}
+
+.portfolio-item:hover { 
+    transition: 250ms;
+    transform: scale(1.2);
+}
+
+.contact-message {
+    width: 100%;
+    height: 150px;
+    
+}
+
+.rounded-corners {
+    border-radius: 10px;
+}
+
+
+
