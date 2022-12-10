@@ -22,15 +22,17 @@
     
 }
 
-h1, h5, label {
+h5, label {
     font-family: var(--heading-font); 
     color: var(--main-font-color)
 }
 
 h1 {
+    font-family: var(--heading-font); 
+    color: var(--bs-primary);
     background: #59C173;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #81D0D4, #575FAB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #81D0D4, #575FAB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -93,10 +95,16 @@ iframe {
     width: 400px;
     height: 250px;
 }
+
 /* Sets size specifically for the movie poster 'Frozen Throne' in Graphic Design Work accordion item for smallest breakpoint (<576px) */
 .poster {
+    width: 300px;
+    height: 500px;
+}
+
+.yt-video {
     width: 400px;
-    height: 600px;
+    height: 250px;
 }
 
 .contact-message {
@@ -110,10 +118,53 @@ iframe {
 }
 
 @media (min-width: 576px) {
+    .yt-video {
+        width: 450px;
+        height: 300px;
+    }
+
+    .lofi-wireframe {
+        width: 300px;
+        height: 500px; 
+    }
+}
+
+@media (min-width: 768px) {
+    .thumbnail {
+        width: 500px;
+        height: 300px;
+    }
+
+    .yt-video {
+        width: 600px;
+        height: 400px;
+    }
+
+    .lofi-wireframe {
+        width: 400px;
+        height: 700px; 
+    }
+}
+
+@media (min-width: 992px) {
+    .thumbnail {
+        width: 900px;
+        height: 600px;
+    }
+
     .poster {
         width: 500px;
         height: 700px;
-        
+    }
+    
+    .yt-video {
+        width: 1000px;
+        height: 600px;
+    }
+
+    .lofi-wireframe {
+        width: 600px;
+        height: 700px; 
     }
 }
 
