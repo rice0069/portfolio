@@ -14,13 +14,14 @@
     <!-- Imports Google fonts (Montserrat & Signika) to be used on my site -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&family=Signika&display=swap" rel="stylesheet">
 
-
+    <!-- Imports fontawesome icon kit -->
+    <script src="https://kit.fontawesome.com/db96a48fc4.js" crossorigin="anonymous"></script>
 
     <!-- Links main.css page -->
     <link rel="stylesheet" href="css/main.css">
 
   </head>
-  <body>
+  <body class="bg-primary">
     <div class="container">
         <article class="site-intro px-1 mb-5">
             <div class="logo py-5">
@@ -45,16 +46,20 @@
             </div>
         </article>
 
-        <div class="site-content container">
+        <div class="site-content">
             <article id="about-me">
-                <h1 class="text-center">About me!</h1>
+                <h1 class="text-center mb-4">About me!</h1>
 
-                <p class="mb-4 text-center fs-2">
+                <p class="mb-4 fs-2">
                     My name is Marc Rice. I currently am an <a class="imd-link text-decoration-none" href="https://www.algonquincollege.com/mediaanddesign/program/interactive-media-design/" target="_blank">Interactive Media Design</a> student at <a class="ac-link text-decoration-none" href="https://www.algonquincollege.com/" target="_blank">Algonquin College</a> in Ottawa, Ontario.
                 </p>
 
-                <p class="text-center fs-4 ">
-                   I specialize in Youtube & Twitch content creation, specifically in the Gaming/Esports/Anime space. If you are a Youtube/Twitch content creator, I would love to work with you to grow your brand by editing your content to be watchable on many different platforms such as Youtube, Tik Tok, Facebook Gaming and much more!
+                <p class="fs-4">
+                   I specialize in <span class="youtube">Youtube <i class="fa-brands fa-youtube"></i></span>, <span class="twitch">Twitch <i class="fa-brands fa-twitch"></i></span> & <span class="tiktok">Tiktok <i class="fa-brands fa-tiktok"></i> </span> content creation, specifically in the Gaming, Esports & Anime online space.
+                </p>
+
+                <p class="fs-4"> 
+                  If you are a Youtube/Twitch content creator, I would love to work with you to grow your brand by editing your content to be watchable on many different platforms such as Youtube, Tik Tok, Facebook Gaming and much more!
                 </p>
             </article>
 
@@ -72,58 +77,56 @@
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>
                           Here are some examples of graphic design work I've done. The examples are Youtube video Thumbnails & projects I've done in school.   
-                        </p>
                         <!-- Creates a Carousel Bootstrap component inside an Accordion item for displaying images-->
                         <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
                           <div class="carousel-inner">
                             <div class="carousel-item active">
 
 
-                              <img src="./images/FINAL-VERSION.jpg" class="d-block w-100 portfolio-item" alt="The Frozen Throne Movie Poster">
+                              <img src="./images/FINAL-VERSION.jpg" class="poster portfolio-item" alt="The Frozen Throne Movie Poster">
 
 
                             </div>
                             <div class="carousel-item">
 
 
-                              <img src="./images/AMV Thumbnail.jpg" class="d-block w-100 portfolio-item" alt="Love Us Again AMV Thumbnail">
+                              <img src="./images/AMV Thumbnail.jpg" class="thumbnail portfolio-item" alt="Love Us Again AMV Thumbnail">
 
 
                             </div>
                             <div class="carousel-item">
 
 
-                              <img src="./images/Blue-YT Banner.png" class="d-block w-100 portfolio-item" alt="Youtube Channel Banner">
+                              <img src="./images/Blue-YT Banner.png" class="thumbnail portfolio-item" alt="Youtube Channel Banner">
 
 
                             </div>
                             <div class="carousel-item">
 
 
-                              <img src="./images/ValMontageThumbnail.jpg" class="d-block w-100 portfolio-item" alt="Valorant Montage Thumbnail">
+                              <img src="./images/ValMontageThumbnail.jpg" class="thumbnail portfolio-item" alt="Valorant Montage Thumbnail">
 
 
                             </div>
                             <div class="carousel-item">
 
 
-                              <img src="./images/Red Aura Baiken.jpg" class="d-block w-100 portfolio-item" alt="Red Aura Baiken Thumbnail">
+                              <img src="./images/Red Aura Baiken.jpg" class="thumbnail portfolio-item" alt="Red Aura Baiken Thumbnail">
 
 
                             </div>
                             <div class="carousel-item">
 
 
-                              <img src="./images/Deathcore Breakdown mix.jpg" class="d-block w-100 portfolio-item" alt="Heaviest Deathcore Breakdown Mix Thumbnail">
+                              <img src="./images/Deathcore Breakdown mix.jpg" class="thumbnail portfolio-item" alt="Heaviest Deathcore Breakdown Mix Thumbnail">
 
 
                             </div>
                             <div class="carousel-item">
 
 
-                              <img src="./images/Mumei-Thumbnail.jpg" class="d-block w-100 portfolio-item" alt="Heaviest Deathcore Breakdown Mix Thumbnail">
+                              <img src="./images/Mumei-Thumbnail.jpg" class="thumbnail portfolio-item" alt="Heaviest Deathcore Breakdown Mix Thumbnail">
 
 
                             </div>
@@ -163,15 +166,12 @@
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>
                           Here are some youtube videos/TikToks I've done as personal projects
-                          <!-- class="d-block w-100"  width="560" height="315" -->
-                        </p>
                         <div id="carouselExampleControls1" class="carousel slide carousel-dark" data-bs-ride="carousel">
                           <div class="carousel-inner">
                             <div class="carousel-item  active">
                               <!-- Love Us Again AMV Video -->
-                              <iframe class="d-block w-100 justify-content-center" width="560" height="315" src="https://www.youtube.com/embed/MsPCHmThyXE" alt="Anime Music Video (AMV) I made" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="Love Us Again AMV Video"></iframe>
+                              <iframe class="d-block w-100" width="560" height="315" src="https://www.youtube.com/embed/MsPCHmThyXE" alt="Anime Music Video (AMV) I made" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen alt="Love Us Again AMV Video"></iframe>
                             </div>
                             <!-- Valorant Montage Video -->
                             <div class="carousel-item"> 
@@ -209,9 +209,7 @@
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
-                        <p>
                           Here are some examples of UX/UI projects I've done in school. 
-                        </p>
                         <div id="carouselExampleControls2" class="carousel slide carousel-dark" data-bs-ride="carousel">
                           <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -224,7 +222,7 @@
                             <div class="carousel-item">
 
 
-                              <img src="./images/Lofi-Wireframes.JPG" class="d-block w-100" alt="Lo-fi wireframes for a school assignment of mine">
+                              <img src="./images/Lofi-Wireframes.JPG" class="d-block w-100 portfolio-item" alt="Lo-fi wireframes for a school assignment of mine">
 
 
                             </div>
@@ -249,7 +247,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                
             </section>
             
             <article class="contact">
@@ -278,7 +276,7 @@
                       <label for="your-message" class="form-label">Your Message</label>
                       <textarea class="contact-message rounded-corners" placeholder="  Your message here..."></textarea>
                       <div class="d-grid gap-2">
-                        <button type="button" class="btn btn-outline-info my-4 py-4">Submit</button>
+                        <button type="button" class="btn btn-outline-info my-4 py-4"><h5 class="nav-link mb-0">Submit</h5></button>
                       </div>
                     </div>
                 </form>

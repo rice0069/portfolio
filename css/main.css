@@ -1,32 +1,50 @@
 :root {
     /*** Colors ***/
 
-    /* Changes the default bootstrap secondary color */
-    --bs-secondary: #242124;
-    --bs-secondary-rgb: 36, 33, 36;
+    /* Changes the default bootstrap primary color (used for body bg color) */
+    --bs-primary: #1b1b1b;
+    --bs-primary-rgb: 27, 27, 27;
 
+    /* Changes the default bootstrap secondary color (used for footer bg color)*/
+    --bs-secondary: #080808;
+    --bs-secondary-rgb: 8, 8, 8;
 
     /* Changes default bootstrap colors of links and hovered links */
     --bs-link-color: #00BFFF; 
     --bs-link-hover-color: #9400d3;
 
     /*** Typography ***/
+
     --heading-font: 'Montserrat', sans-serif; 
     --main-font: 'Signika', sans-serif;
+
+    --main-font-color: #f5f5f5;
     
 }
 
-body {
-    background-color: #000036;
-    color: white;
-}
-
-h1, h5 {
+h1, h5, label {
     font-family: var(--heading-font); 
+    color: var(--main-font-color)
 }
 
-p, a {
+h1 {
+    background: #59C173;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+p, a{
     font-family: var(--main-font);
+    line-height: 2.5rem;
+}
+
+p {
+    color: var(--main-font-color);
+}
+
+button {
+    font-family: var(--heading-font);  
 }
 
 .accordion-item {
@@ -44,20 +62,41 @@ p, a {
     height: 50%;
 }
 
-/* Decreases the size of the movie poster in the Graphic Design Work accordion item. */
-.movie-poster {
-    width: 80%;
-    height: 80%;
+.youtube {
+    color: #FF0000;
 }
 
+.twitch {
+    color: #9146FF;
+}
+
+.tiktok {
+    color: #00f2ea;
+}
 .portfolio-item {
     transition: 250ms;
     transform: scale(1);
+    margin-top: 1rem;
 }
 
 .portfolio-item:hover { 
     transition: 250ms;
     transform: scale(1.2);
+}
+
+iframe {
+    margin-top: 1rem;
+}
+
+/* Sets the size of portfolio items in Graphic Design Work accordion item for smallest breakpoint (<576px) */
+.thumbnail {
+    width: 400px;
+    height: 250px;
+}
+/* Sets size specifically for the movie poster 'Frozen Throne' in Graphic Design Work accordion item for smallest breakpoint (<576px) */
+.poster {
+    width: 400px;
+    height: 600px;
 }
 
 .contact-message {
@@ -70,6 +109,12 @@ p, a {
     border-radius: 10px;
 }
 
-
+@media (min-width: 576px) {
+    .poster {
+        width: 500px;
+        height: 700px;
+        
+    }
+}
 
 
