@@ -1,12 +1,36 @@
 :root {
-    /* Colors */
-    --bs-link-color: #00BFFF;
+    /*** Colors ***/
+
+    /* Changes the default bootstrap secondary color */
+    --bs-secondary: #242124;
+    --bs-secondary-rgb: 36, 33, 36;
+
+
+    /* Changes default bootstrap colors of links and hovered links */
+    --bs-link-color: #00BFFF; 
+    --bs-link-hover-color: #9400d3;
+
+    /*** Typography ***/
+    --heading-font: 'Montserrat', sans-serif; 
+    --main-font: 'Signika', sans-serif;
+    
 }
 
-
 body {
-    background-color: black;
+    background-color: #000036;
     color: white;
+}
+
+h1, h5 {
+    font-family: var(--heading-font); 
+}
+
+p, a {
+    font-family: var(--main-font);
+}
+
+.accordion-item {
+    font-family: var(--main-font);
 }
 
 .site-intro {
@@ -45,6 +69,7 @@ body {
 .rounded-corners {
     border-radius: 10px;
 }
+
 
 
 
