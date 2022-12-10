@@ -147,7 +147,7 @@ iframe {
 }
 
 @media (min-width: 992px) {
-    .thumbnail {
+    .thumbnail, .hifi-wireframe, .user-journey {
         width: 900px;
         height: 600px;
     }
@@ -158,13 +158,20 @@ iframe {
     }
     
     .yt-video {
-        width: 1000px;
-        height: 600px;
+        width: 800px;
+        height: 450px;
     }
 
     .lofi-wireframe {
         width: 600px;
         height: 700px; 
+    }
+}
+
+@media (min-width: 1200px) {
+    .yt-video {
+        width: 1100px;
+        height: 600px;
     }
 }
 
