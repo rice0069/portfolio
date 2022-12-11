@@ -91,20 +91,15 @@ iframe {
 }
 
 /* Sets the size of portfolio items in Graphic Design Work accordion item for smallest breakpoint (<576px) */
-.thumbnail {
+.thumbnail, .yt-video, .hifi-wireframe, .user-journey {
     width: 400px;
     height: 250px;
 }
 
 /* Sets size specifically for the movie poster 'Frozen Throne' in Graphic Design Work accordion item for smallest breakpoint (<576px) */
-.poster {
+.poster, .lofi-wireframe {
     width: 300px;
     height: 500px;
-}
-
-.yt-video {
-    width: 400px;
-    height: 250px;
 }
 
 .contact-message {
@@ -130,9 +125,9 @@ iframe {
 }
 
 @media (min-width: 768px) {
-    .thumbnail {
-        width: 500px;
-        height: 300px;
+    .thumbnail, .hifi-wireframe, .user-journey {
+        width: 600px;
+        height: 400px;
     }
 
     .yt-video {
@@ -147,9 +142,9 @@ iframe {
 }
 
 @media (min-width: 992px) {
-    .thumbnail, .hifi-wireframe, .user-journey {
-        width: 900px;
-        height: 600px;
+    .yt-video, .thumbnail, .hifi-wireframe, .user-journey {
+        width: 800px;
+        height: 500px;
     }
 
     .poster {
@@ -157,11 +152,6 @@ iframe {
         height: 700px;
     }
     
-    .yt-video {
-        width: 800px;
-        height: 450px;
-    }
-
     .lofi-wireframe {
         width: 600px;
         height: 700px; 
