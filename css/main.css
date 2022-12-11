@@ -15,6 +15,7 @@
 
     /*** Typography ***/
 
+    /* Sets variables for the fonts & font color I'll be using throughout the website */
     --heading-font: 'Montserrat', sans-serif; 
     --main-font: 'Signika', sans-serif;
 
@@ -30,10 +31,11 @@ h5, label {
 h1 {
     font-family: var(--heading-font); 
     color: var(--bs-primary);
-    background: #59C173;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #81D0D4, #575FAB);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #81D0D4, #575FAB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+    /* Gradient for h1 "banners" that match gradient on my logo svg at the top of the page  */
+    background: #81D0D4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #81D0D4, #575FAB);  
+    background: linear-gradient(to right, #81D0D4, #575FAB); 
 }
 
 p, a{
@@ -90,13 +92,12 @@ iframe {
     margin-top: 1rem;
 }
 
-/* Sets the size of portfolio items in Graphic Design Work accordion item for smallest breakpoint (<576px) */
+/* Sets the size of portfolio items for smallest breakpoint (<576px) */
 .thumbnail, .yt-video, .hifi-wireframe, .user-journey {
     width: 400px;
     height: 250px;
 }
 
-/* Sets size specifically for the movie poster 'Frozen Throne' in Graphic Design Work accordion item for smallest breakpoint (<576px) */
 .poster, .lofi-wireframe {
     width: 300px;
     height: 500px;
