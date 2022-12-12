@@ -268,29 +268,29 @@
                 <h5 class="text-center mb-2">Email: marc.rice1738@gmail.com</h5>
                 <h5 class="text-center">Phone: (343) 987-4685</h5>
 
-                <h5 class="text-center mt-4 mb-2 text-color-red">Or you can fill out this form!</h5>
-
-                <form> 
-                  <div class="row"> <!-- Creates a grid row to place the "Your name" & "Your email " -->
-                    <div class="my-2 col"> <!-- col evenly seperates the fields to place them next to each other -->
+                <h5 class="h2 text-center mt-4 mb-2 text-color-red">Or you can fill out this form!</h5>
+                  
+                <form action="https://getform.io/f/dfc1b41f-89c4-42e8-93cb-b2ace58e0949" method="POST">
+                  
+                  <div class="row"> 
+                    <div class="my-2 col"> 
                       <label for="your-name" class="form-label">Your Name</label>
-                      <input type="name" class="form-control" id="your-name"
-                      placeholder="John Smith">
+                      <input type="text" name="name" class="form-control" id="your-name" placeholder="John Smith">
                     </div>
 
                     <div class="my-2 col">
                       <label for="your-email" class="form-label">Your Email</label>
-                      <input type="email" class="form-control" id="your-email" placeholder="name@example.com">
+                      <input type="email" name="user-email" class="form-control" id="your-email" placeholder="name@example.com">
                     </div>
                   </div>
                   
                     <div class="message-textarea mt-2 mb-3">
-                      <label for="your-message" class="form-label">Your Message</label>
+                      <label for="your-message" name="user-message" class="form-label">Your Message</label>
                       <textarea class="contact-message rounded-corners" placeholder="  Your message here..."></textarea>
                       <div class="d-grid gap-2">
-                        <button type="button" class="btn btn-outline-info my-4 py-4"><h5 class="nav-link mb-0">Submit</h5></button>
+                        <button type="submit" class="btn btn-outline-info my-4 py-4"><h5 class="nav-link mb-0">Submit</h5></button>
                       </div>
-                    </div>
+                    </div> 
                 </form>
             </article>
             
