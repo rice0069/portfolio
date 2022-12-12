@@ -138,6 +138,10 @@ iframe {
         width: 400px;
         height: 700px; 
     }
+
+    .main-nav {
+        font-size: 1.5rem;
+    }
 }
 
 /* Media query to adjust sizes of some portfolio items when viewport is >= 992px */
