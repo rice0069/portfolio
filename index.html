@@ -271,22 +271,24 @@
                 <h5 class="h2 text-center mt-4 mb-2 text-color-red">Or you can fill out this form!</h5>
                   
                 <form action="https://getform.io/f/dfc1b41f-89c4-42e8-93cb-b2ace58e0949" method="POST">
+
+                  <input type="hidden" name="_gotcha" style="display:none !important">
                   
                   <div class="row"> 
                     <div class="my-2 col"> 
                       <label for="your-name" class="form-label">Your Name</label>
-                      <input type="text" name="name" class="form-control" id="your-name" placeholder="John Smith">
+                      <input type="text" name="user-name" class="form-control" id="your-name" placeholder="John Smith" required="required">
                     </div>
 
                     <div class="my-2 col">
                       <label for="your-email" class="form-label">Your Email</label>
-                      <input type="email" name="user-email" class="form-control" id="your-email" placeholder="name@example.com">
+                      <input type="email" name="user-email" class="form-control" id="your-email" placeholder="name@example.com" required="required">
                     </div>
                   </div>
                   
                     <div class="message-textarea mt-2 mb-3">
-                      <label for="your-message" name="user-message" class="form-label">Your Message</label>
-                      <textarea class="contact-message rounded-corners" placeholder="  Your message here..."></textarea>
+                      <label for="your-message" class="form-label">Your Message</label>
+                      <textarea type="text" name="user-message" class="contact-message rounded-corners" placeholder="  Your message here..." required="required"></textarea>
                       <div class="d-grid gap-2">
                         <button type="submit" class="btn btn-outline-info my-4 py-4"><h5 class="nav-link mb-0">Submit</h5></button>
                       </div>
