@@ -25,7 +25,7 @@
 
 h5, label {
     font-family: var(--heading-font); 
-    color: var(--main-font-color)
+    color: var(--main-font-color);
 }
 
 h1 {
@@ -36,6 +36,8 @@ h1 {
     background: #81D0D4;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #81D0D4, #575FAB);  
     background: linear-gradient(to right, #81D0D4, #575FAB); 
+    
+    border-radius: 10px;
 }
 
 p, a{
@@ -92,7 +94,7 @@ iframe {
     margin-top: 1rem;
 }
 
-/* Sets the size of portfolio items for smallest breakpoint (<576px) */
+/* Sets the sizes of portfolio items for smallest breakpoint (<576px) */
 .thumbnail, .yt-video, .hifi-wireframe, .user-journey {
     width: 400px;
     height: 250px;
@@ -105,14 +107,14 @@ iframe {
 
 .contact-message {
     width: 100%;
-    height: 150px;
-    
+    height: 150px;   
 }
 
 .rounded-corners {
     border-radius: 10px;
 }
 
+/* Media query to adjust sizes of some portfolio items when viewport is >= 576px */
 @media (min-width: 576px) {
     .yt-video {
         width: 450px;
@@ -125,13 +127,9 @@ iframe {
     }
 }
 
+/* Media query to adjust sizes of some portfolio items when viewport is >= 768px */
 @media (min-width: 768px) {
-    .thumbnail, .hifi-wireframe, .user-journey {
-        width: 600px;
-        height: 400px;
-    }
-
-    .yt-video {
+    .thumbnail, .yt-video, .hifi-wireframe, .user-journey {
         width: 600px;
         height: 400px;
     }
@@ -142,6 +140,7 @@ iframe {
     }
 }
 
+/* Media query to adjust sizes of some portfolio items when viewport is >= 992px */
 @media (min-width: 992px) {
     .yt-video, .thumbnail, .hifi-wireframe, .user-journey {
         width: 800px;
@@ -159,6 +158,7 @@ iframe {
     }
 }
 
+/* Media query to adjust sizes of some portfolio items when viewport is >= 1200px */
 @media (min-width: 1200px) {
     .yt-video {
         width: 1100px;
