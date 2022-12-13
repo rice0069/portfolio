@@ -24,15 +24,16 @@
     <body class="bg-primary">
 
       <ul class="skip-links">
-        <li><a href="#main">Skip to main content</a></li>
-        <li><a href="#navigation">Skip to nav</a></li>
-        <li><a href="#about-me">Skip to about me</a></li>
-        <li><a href="#portfolio">Skip to portfolio</a></li>
+        <li><a href="#header" itemprop="SiteNavigationElement">Skip to header</a></li>
+        <li><a href="#main" itemprop="SiteNavigationElement">Skip to main content</a></li>
+        <li><a href="#navigation" itemprop="SiteNavigationElement">Skip to nav</a></li>
+        <li><a href="#about-me" itemprop="SiteNavigationElement">Skip to about me</a></li>
+        <li><a href="#portfolio" itemprop="SiteNavigationElement">Skip to portfolio</a></li>
     </ul>
 
     <div class="container">
         <!-- Beginning of website -->
-        <article id="#main" class="site-intro px-1 mb-5">
+        <header id="#header" class="site-intro px-1 mb-5" role="navigation">
             <div class="logo py-5">
                 <!-- Places SVG at the top of the website -->
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -276,22 +277,23 @@
             <div>
                 <ul id="navigation" class="main-nav nav justify-content-center">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#graphic-design">Graphic Design<a>
+                      <a class="nav-link active" aria-current="page" href="#graphic-design" itemprop="SiteNavigationElement">Graphic Design<a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#web-dev">Web Development</a>
+                      <a class="nav-link" href="#web-dev" itemprop="SiteNavigationElement">Web Development</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link "  href="#video-editing">Video Editing </a>
+                      <a class="nav-link "  href="#video-editing" itemprop="SiteNavigationElement">Video Editing </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#ux-ui">UX/UI Design</a>
+                        <a class="nav-link" href="#ux-ui" itemprop="SiteNavigationElement">UX/UI Design</a>
                       </li>
                   </ul>
             </div>
-        </article>
+          </header>
 
-        <div class="site-content">
+        <div id="#main" class="site-content" role="main">
+            <!-- Brief about me article -->
             <article id="about-me">
                 <h1 class="text-center mb-4">About me!</h1>
 
@@ -395,7 +397,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- Web Development Accordion Item -->
+                  <!-- Web Development accordion item -->
                   <div id="web-dev" class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo"> 
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -410,6 +412,7 @@
                       </div>
                     </div>
                   </div>
+                  <!-- Video editing accordion item -->
                   <div id="video-editing" class="accordion-item">
                     <h2 class="accordion-header" id="headingThree">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -453,6 +456,7 @@
                       </div>
                     </div>
                   </div>
+                  <!-- UX/UI accoirdion item -->
                   <div id="ux-ui" class="accordion-item">
                     <h2 class="accordion-header" id="headingFour">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -509,16 +513,16 @@
             </section>
             
             <!-- Contact Section -->
-            <article class="contact">
+            <article class="contact" itemscope itemtype="https://schema.org/ContactPoint">
                 <h1 class="text-center my-4">Contact Me!</h1>
 
-                <h5 class="text-center mb-2">Email: marc.rice1738@gmail.com</h5>
-                <h5 class="text-center">Phone: (343) 987-4685</h5>
+                <h5 itemprop="email" class="text-center mb-2">Email: marc.rice1738@gmail.com</h5>
+                <h5 itemprop="telephone" class="text-center">Phone: (343) 987-4685</h5>
 
                 <h5 class="h2 text-center mt-4 mb-2 text-color-red">Or you can fill out this form!</h5>
                 
                 <!-- Contact form which is linked to my getform.io account -->
-                <form action="https://getform.io/f/dfc1b41f-89c4-42e8-93cb-b2ace58e0949" method="POST">
+                <form action="https://getform.io/f/dfc1b41f-89c4-42e8-93cb-b2ace58e0949" method="POST" role="form">
 
                   <!-- Hidden input field that reveals spam bots -->
                   <input type="hidden" name="_gotcha" style="display:none !important">
@@ -553,7 +557,7 @@
     <footer class="bg-secondary text-center p-2">
 
         <!-- Copyright info -->
-        <p>&copy; Elemental Media 2022 | All right reserved.</p>
+        <p itemprop="copyrightHolder">&copy; Elemental Media 2022 | All right reserved.</p>
 
         <!-- Link to my Github account -->
         <a class="text-decoration-none align-end" href="https://github.com/rice0069" target="_blank">My Github</a>
