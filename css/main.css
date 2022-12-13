@@ -52,6 +52,7 @@ button {
     font-family: var(--heading-font);  
 }
 
+/* Hides skip links */
 .skip-links {
     display: none;
 }
@@ -60,6 +61,7 @@ button {
     font-family: var(--main-font);
 }
 
+/* adjusts layout of logo and nav links at the top of the site to a column */
 .site-intro {
     display: flex;
     flex-direction: column;
@@ -82,6 +84,8 @@ button {
 .tiktok {
     color: #00f2ea;
 }
+
+/* Creates a smooth zoom in effect when hovering & un-hovering over portfolio item images. */
 .portfolio-item {
     transition: 250ms;
     transform: scale(1);
