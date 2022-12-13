@@ -15,12 +15,11 @@
 
     /*** Typography ***/
 
-    /* Sets variables for the fonts & font color I'll be using throughout the website */
+    /* Sets variables for the fonts & font color that I'll be using throughout the website */
     --heading-font: 'Montserrat', sans-serif; 
     --main-font: 'Signika', sans-serif;
 
-    --main-font-color: #f5f5f5;
-    
+    --main-font-color: #f5f5f5;   
 }
 
 h5, label {
