@@ -53,6 +53,10 @@ button {
     font-family: var(--heading-font);  
 }
 
+.skip-links {
+    display: none;
+}
+
 .accordion-item {
     font-family: var(--main-font);
 }
