@@ -13,9 +13,9 @@ I took SOME elements from my past wireframes from the UX/UI design class this se
 
 ## The challenges
 
-One of the biggest challenges I faced was actually starting to work on this website. I was hesitant to start development because I was anxious about using the Bootstrap framework. I didn't have a very good understanding of the framework and I initially felt more comfortable hardcoding the whole website, but I couldn't due to the requirements of the project. 
+One of the challenges I faced when developping this website was that initially, I wasn't confident in my knowledge of Bootstrap, before I started development I thought I was going to really struggle with this project because of that. But what I ended up doing is I watched the zoom recordings of our classes that went over Bootstrap aswell as watched some video guides about it on Youtube. This really helped me get started.
 
-When I finally decided to start the project I started by rewatched the Zoom classroom recordings from when we started learning/using Bootstrap in class (I believe this was the week 9 & 10 recordings) as well as watched some video guides on Youtube. Working alongside these resources helped make me feel more confident in using Bootstrap to develop my website and once I truly got started, I found that Bootstrap made developing many parts of this site much, much easier. 
+Another challenge I faced was that I wasn't sure what dimensions I should make my images for the website. I don't really understand what sizes my images should be in order to be optimized. I ended making two versions of each image, one that was the default size and one that was smaller for when the site was being loaded on smaller sized viewports. I'm not really sure if the sizes I chose are good or not so if you're reading this and could give me some feedback/advice on the subject I would greatly appreciate it.
 
 ## Assets/Resources
 
